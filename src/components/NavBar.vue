@@ -27,7 +27,7 @@
     }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     .navbar-brand {
         .sub-text {
             margin-left: 0.5em;
