@@ -42,7 +42,7 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [ico-downloads]: https://img.shields.io/npm/dt/arionum-web-wallet.svg?style=flat-square
 
 [link-npm]: https://npmjs.com/package/arionum-web-wallet
-[link-travis]: https://travis-ci.org/pxgamer/arionum-web-wallet
+[link-travis]: https://travis-ci.com/pxgamer/arionum-web-wallet
 [link-code-quality]: https://codecov.io/gh/pxgamer/arionum-web-wallet
 [link-downloads]: https://npmjs.com/package/arionum-web-wallet
 [link-author]: https://github.com/pxgamer
