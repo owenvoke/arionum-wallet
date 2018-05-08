@@ -3,6 +3,7 @@
         <NavBar></NavBar>
         <section class="section">
             <div class="container is-fluid">
+                <Details></Details>
             </div>
         </section>
     </div>
@@ -10,11 +11,13 @@
 
 <script>
     import NavBar from './components/NavBar'
+    import Details from './components/Details'
 
     export default {
         name: 'app',
         components: {
-            NavBar
+            NavBar,
+            Details
         }
     }
 </script>
