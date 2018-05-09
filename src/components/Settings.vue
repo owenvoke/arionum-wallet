@@ -1,6 +1,6 @@
 <template>
     <div id="details">
-        <h3 class="title is-3">Details</h3>
+        <h3 class="title is-3">Settings</h3>
 
         <div class="box">
             <div class="field">
