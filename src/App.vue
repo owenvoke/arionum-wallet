@@ -3,7 +3,7 @@
         <NavBar></NavBar>
         <section class="section">
             <div class="container is-fluid">
-                <Settings></Settings>
+                <router-view></router-view>
             </div>
         </section>
     </div>

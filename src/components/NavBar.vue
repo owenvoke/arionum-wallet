@@ -14,9 +14,7 @@
         </div>
 
         <div class="navbar-end">
-            <a class="navbar-item" href="./">
-                Settings
-            </a>
+            <router-link class="navbar-item" to="/settings">Settings</router-link>
         </div>
     </nav>
 </template>
