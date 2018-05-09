@@ -21,7 +21,7 @@
 
 <script>
     export default {
-        name: 'Details',
+        name: 'Settings',
         computed: {
             address: {
                 get: function () {

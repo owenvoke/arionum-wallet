@@ -15,7 +15,7 @@
 
         <div class="navbar-end">
             <a class="navbar-item" href="./">
-                Details
+                Settings
             </a>
         </div>
     </nav>
