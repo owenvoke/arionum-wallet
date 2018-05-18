@@ -5,7 +5,7 @@ export default {
   },
 
   getPeer () {
-    return `https://aro.pxgamer.xyz`
+    return process.env.VUE_APP_NODE_URL
   },
   getRequest (endpoint) {
     return fetch(this.getPeer() + endpoint)
