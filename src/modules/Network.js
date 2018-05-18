@@ -8,7 +8,8 @@ export default {
 	transaction: '/api.php?q=getTransaction',
 	publicKey: '/api.php?q=getPublicKey',
 	generateAccount: '/api.php?q=generateAccount',
-	currentBlock: '/api.php?q=currentBlock'
+	currentBlock: '/api.php?q=currentBlock',
+	block: '/api.php?q=getBlock'
   },
 
   getPeer () {
@@ -45,5 +46,8 @@ export default {
   },
   currentBlock () {
     return this.getRequest(this.endpoints.currentBlock)
+  },
+  getBlock (height) {
+    return this.getRequest(this.endpoints.block+`&height=${height}`)
   }
 }
