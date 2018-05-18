@@ -6,7 +6,8 @@ export default {
 	pendingBalance: '/api.php?q=getPendingBalance',
 	transactions: '/api.php?q=getTransactions',
 	transaction: '/api.php?q=getTransaction',
-	publicKey: '/api.php?q=getPublicKey'
+	publicKey: '/api.php?q=getPublicKey',
+	generateAccount: '/api.php?q=generateAccount'
   },
 
   getPeer () {
@@ -37,5 +38,8 @@ export default {
   },
   getPublicKey (account) {
     return this.getRequest(this.endpoints.publicKey+`&account=${account}`)
+  },
+  generateAccount () {
+    return this.getRequest(this.endpoints.generateAccount)
   }
 }
