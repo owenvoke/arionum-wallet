@@ -2,7 +2,7 @@
     <div>
         <NavBar></NavBar>
         <section class="section">
-            <div class="container is-fluid">
+            <div class="container">
                 <router-view></router-view>
             </div>
         </section>

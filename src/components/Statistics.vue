@@ -1,21 +1,22 @@
 <template>
-    <div id="settings">
-        <h3 class="title is-3">Settings</h3>
+    <div class="statistics">
+        <h1 class="title is-1">Statistics</h1>
 
-        <div class="box">
-            <div class="field">
-                <label class="label" for="details.address">Address</label>
-                <input disabled class="input" id="details.address" :value="address"/>
-            </div>
-            <div class="field">
-                <label class="label" for="details.publicKey">Public key</label>
-                <input class="input" id="details.publicKey" v-model="publicKey"/>
-            </div>
-            <div class="field">
-                <label class="label" for="details.privateKey">Private key</label>
-                <input class="input" id="details.privateKey" v-model="privateKey"/>
-            </div>
-        </div>
+        <table class="table">
+            <tbody>
+            <tr>
+                <td>
+                    <span class="icon">
+                       <i class="fas fa-wallet"></i>
+                    </span>
+                    <strong>Balance:</strong>
+                </td>
+                <td>
+                    <span>{{ balance }}</span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
     </div>
 </template>
 
@@ -23,15 +24,21 @@
     import Network from '../modules/Network'
 
     export default {
-        name: 'Settings',
+        name: 'Statistics',
         data () {
             return {
-                address: null
+                address: null,
+                balance: null,
+
             }
         },
         mounted () {
             Network.getAddress(this.publicKey)
                 .then((response) => { this.address = response.data })
+                .then(() => {
+                    Network.getBalance(this.address)
+                        .then((response) => { this.balance = response.data })
+                })
         },
         computed: {
             publicKey: {
