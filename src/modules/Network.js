@@ -11,7 +11,8 @@ export default {
 	currentBlock: '/api.php?q=currentBlock',
 	block: '/api.php?q=getBlock',
 	blockTransactions: '/api.php?q=getBlockTransactions',
-	version: '/api.php?q=version'
+	version: '/api.php?q=version',
+	mempoolSize: '/api.php?q=mempoolSize'
   },
 
   getPeer () {
@@ -57,5 +58,8 @@ export default {
   },
   version () {
     return this.getRequest(this.endpoints.version)
+  },
+  mempoolSize () {
+    return this.getRequest(this.endpoints.mempoolSize)
   }
 }
