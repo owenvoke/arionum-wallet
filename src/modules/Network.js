@@ -7,7 +7,8 @@ export default {
 	transactions: '/api.php?q=getTransactions',
 	transaction: '/api.php?q=getTransaction',
 	publicKey: '/api.php?q=getPublicKey',
-	generateAccount: '/api.php?q=generateAccount'
+	generateAccount: '/api.php?q=generateAccount',
+	currentBlock: '/api.php?q=currentBlock'
   },
 
   getPeer () {
@@ -41,5 +42,8 @@ export default {
   },
   generateAccount () {
     return this.getRequest(this.endpoints.generateAccount)
+  },
+  currentBlock () {
+    return this.getRequest(this.endpoints.currentBlock)
   }
 }
