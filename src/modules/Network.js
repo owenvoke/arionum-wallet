@@ -2,7 +2,8 @@ export default {
   endpoints: {
     address: '/api.php?q=getAddress',
 	base58: '/api.php?q=base58',
-    balance: '/api.php?q=getPendingBalance'
+    balance: '/api.php?q=getBalance',
+	pendingBalance: '/api.php?q=getPendingBalance'
   },
 
   getPeer () {
@@ -21,5 +22,8 @@ export default {
   },
   getBalance (account) {
     return this.getRequest(this.endpoints.balance+`&account=${account}`)
+  },
+  getPendingBalance (account) {
+    return this.getRequest(this.endpoints.pendingBalance+`&account=${account}`)
   }
 }
