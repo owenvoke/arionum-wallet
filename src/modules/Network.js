@@ -10,7 +10,8 @@ export default {
 	generateAccount: '/api.php?q=generateAccount',
 	currentBlock: '/api.php?q=currentBlock',
 	block: '/api.php?q=getBlock',
-	blockTransactions: '/api.php?q=getBlockTransactions'
+	blockTransactions: '/api.php?q=getBlockTransactions',
+	version: '/api.php?q=version'
   },
 
   getPeer () {
@@ -53,5 +54,8 @@ export default {
   },
   getBlockTransactions (height) {
     return this.getRequest(this.endpoints.blockTransactions+`&height=${height}`)
+  },
+  version () {
+    return this.getRequest(this.endpoints.version)
   }
 }
