@@ -12,6 +12,7 @@
     "@fortawesome/fontawesome-free-solid": "^5.0.13",
     "bulma": "^0.7.1",
     "datejs": "^1.0.0-rc3",
+    "qrcode": "^1.2.0",
     "vue": "^2.5.16",
     "vue-router": "^3.0.1"
   },
