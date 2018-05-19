@@ -32,6 +32,7 @@
 </template>
 
 <script>
+    import {publicKey, privateKey} from '../modules/Keys'
     import Network from '../modules/Network'
     import Helpers from '../modules/Helpers'
 
@@ -53,22 +54,8 @@
                 })
         },
         computed: {
-            publicKey: {
-                get: function () {
-                    return localStorage.getItem('wallet.publicKey')
-                },
-                set: function (publicKey) {
-                    return localStorage.setItem('wallet.publicKey', publicKey)
-                }
-            },
-            privateKey: {
-                get: function () {
-                    return localStorage.getItem('wallet.privateKey')
-                },
-                set: function (privateKey) {
-                    return localStorage.setItem('wallet.privateKey', privateKey)
-                }
-            }
+            publicKey,
+            privateKey
         }
     }
 </script>
