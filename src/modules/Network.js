@@ -64,7 +64,7 @@ export default {
     return process.env.VUE_APP_NODE_URL
   },
   getRequest (endpoint) {
-    return fetch(this.getPeer() + endpoint)
+    return window.fetch(this.getPeer() + endpoint)
       .then(this.json)
       .catch(error => console.error('Request failed', error))
   },
