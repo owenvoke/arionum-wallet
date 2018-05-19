@@ -29,7 +29,6 @@
             return {
                 address: null,
                 balance: null,
-
             }
         },
         mounted () {
