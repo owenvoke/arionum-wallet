@@ -8,10 +8,10 @@ const publicKey = {
 }
 const privateKey = {
   get: function () {
-    return localStorage.getItem('wallet.privateKey')
+    return window.localStorage.getItem('wallet.privateKey')
   },
   set: function (privateKey) {
-    return localStorage.setItem('wallet.privateKey', privateKey)
+    return window.localStorage.setItem('wallet.privateKey', privateKey)
   }
 }
 
