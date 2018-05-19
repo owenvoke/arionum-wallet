@@ -5,15 +5,30 @@
         <div class="box">
             <div class="field">
                 <label class="label" for="details.address">Address</label>
-                <input disabled class="input" id="details.address" :value="address"/>
+                <p class="control has-icons-left">
+                    <input disabled class="input" id="details.address" :value="address"/>
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-address-book"></i>
+                    </span>
+                </p>
             </div>
             <div class="field">
                 <label class="label" for="details.publicKey">Public key</label>
-                <input class="input" id="details.publicKey" v-model="publicKey"/>
+                <p class="control has-icons-left">
+                    <input class="input" id="details.publicKey" v-model="publicKey"/>
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-lock-open"></i>
+                    </span>
+                </p>
             </div>
             <div class="field">
                 <label class="label" for="details.privateKey">Private key</label>
-                <input class="input" id="details.privateKey" v-model="privateKey"/>
+                <p class="control has-icons-left">
+                    <input class="input" id="details.privateKey" v-model="privateKey"/>
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-lock"></i>
+                    </span>
+                </p>
             </div>
         </div>
     </div>
