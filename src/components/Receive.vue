@@ -8,8 +8,8 @@
         <p class="control has-icons-left">
           <input disabled class="input" id="requestAddress" :value="address"/>
           <span class="icon is-small is-left">
-                      <i class="fas fa-address-book"></i>
-                    </span>
+            <i class="fas fa-address-book"></i>
+          </span>
         </p>
       </div>
 
@@ -19,8 +19,8 @@
           <input class="input" id="requestValue" v-model="value" type="number"
                  @change="createRequestQr"/>
           <span class="icon is-small is-left">
-                      <i class="fas fa-coins"></i>
-                    </span>
+            <i class="fas fa-coins"></i>
+          </span>
         </p>
       </div>
 
@@ -30,8 +30,8 @@
           <input class="input" id="requestMessage" v-model="message"
                  @change="createRequestQr"/>
           <span class="icon is-small is-left">
-                      <i class="fas fa-comment-alt"></i>
-                    </span>
+            <i class="fas fa-comment-alt"></i>
+          </span>
         </p>
       </div>
     </form>

@@ -8,8 +8,8 @@
         <p class="control has-icons-left">
           <input disabled class="input" id="details.address" :value="address"/>
           <span class="icon is-small is-left">
-                      <i class="fas fa-address-book"></i>
-                    </span>
+            <i class="fas fa-address-book"></i>
+          </span>
         </p>
       </div>
       <div class="field">
@@ -17,8 +17,8 @@
         <p class="control has-icons-left">
           <input class="input" id="details.publicKey" v-model="publicKey"/>
           <span class="icon is-small is-left">
-                      <i class="fas fa-lock-open"></i>
-                    </span>
+            <i class="fas fa-lock-open"></i>
+          </span>
         </p>
       </div>
       <div class="field">
@@ -26,8 +26,8 @@
         <p class="control has-icons-left">
           <input class="input" id="details.privateKey" v-model="privateKey"/>
           <span class="icon is-small is-left">
-                      <i class="fas fa-lock"></i>
-                    </span>
+            <i class="fas fa-lock"></i>
+          </span>
         </p>
       </div>
     </div>

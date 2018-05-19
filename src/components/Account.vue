@@ -6,9 +6,9 @@
       <tbody>
       <tr>
         <td>
-                    <span class="icon">
-                       <i class="fas fa-address-book"></i>
-                    </span>
+          <span class="icon">
+            <i class="fas fa-address-book"></i>
+          </span>
           <strong>Address</strong>
         </td>
         <td>
@@ -17,9 +17,9 @@
       </tr>
       <tr>
         <td>
-                    <span class="icon">
-                       <i class="fas fa-wallet"></i>
-                    </span>
+          <span class="icon">
+            <i class="fas fa-wallet"></i>
+          </span>
           <strong>Balance</strong>
         </td>
         <td>
@@ -28,9 +28,9 @@
       </tr>
       <tr>
         <td>
-                    <span class="icon">
-                       <i class="fas fa-arrow-alt-circle-up"></i>
-                    </span>
+          <span class="icon">
+            <i class="fas fa-arrow-alt-circle-up"></i>
+          </span>
           <strong>Node version</strong>
         </td>
         <td>
