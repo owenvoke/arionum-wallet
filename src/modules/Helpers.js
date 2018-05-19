@@ -1,10 +1,10 @@
 import 'datejs'
 
 export default {
-  getFormattedTransactionDate (date) {
+  getFormattedDate (date) {
     let d = new Date(0)
     d.setUTCSeconds(date)
-    return d.toString('dS MMM yyyy HH:mm:s')
+    return d.toString('dd MMM yyyy HH:mm:ss')
   },
   getAddressLink (address) {
     return `//arionum.info/account/${address}`
