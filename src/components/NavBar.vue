@@ -14,6 +14,12 @@
                 </span>
                 <span>Operations</span>
             </router-link>
+            <router-link class="navbar-item" to="/receive">
+                <span class="icon">
+                       <i class="fas fa-level-down-alt"></i>
+                </span>
+                <span>Receive</span>
+            </router-link>
             <router-link class="navbar-item" to="/settings">
                 <span class="icon">
                        <i class="fas fa-sliders-h"></i>
