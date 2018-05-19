@@ -74,7 +74,7 @@ export default {
         if (data.status === STATUS_OK) {
           return Promise.resolve(data)
         } else {
-          return Promise.reject(new Error(response.data))
+          return Promise.reject(new Error(data.data))
         }
       })
   }
