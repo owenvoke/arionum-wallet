@@ -1,10 +1,10 @@
 <template>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <nav id="navbar" class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="./">
-        <img src="../assets/logo.svg" alt="" height="auto" width="28">
+      <router-link class="navbar-item" to="/">
+        <img src="../assets/logo.svg" alt="Arionum" class="navbar-logo">
         <div class="sub-text">Arionum Web Wallet</div>
-      </a>
+      </router-link>
     </div>
 
     <div class="navbar-end">
@@ -37,9 +37,16 @@
 </script>
 
 <style lang="scss" scoped>
-  .navbar-brand {
-    .sub-text {
-      margin-left: 0.5em;
+  .navbar {
+    box-shadow: 0 0.04em lightgray;
+
+    .navbar-brand {
+      .sub-text {
+        margin-left: 0.5em;
+      }
+      .navbar-logo {
+        height: 24px;
+      }
     }
   }
 </style>
