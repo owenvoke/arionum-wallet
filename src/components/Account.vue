@@ -7,12 +7,34 @@
             <tr>
                 <td>
                     <span class="icon">
+                       <i class="fas fa-address-book"></i>
+                    </span>
+                    <strong>Address</strong>
+                </td>
+                <td>
+                    <span>{{ address }}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="icon">
                        <i class="fas fa-wallet"></i>
                     </span>
-                    <strong>Balance:</strong>
+                    <strong>Balance</strong>
                 </td>
                 <td>
                     <span>{{ balance }}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="icon">
+                       <i class="fas fa-arrow-alt-circle-up"></i>
+                    </span>
+                    <strong>Node version</strong>
+                </td>
+                <td>
+                    <span>{{ version }}</span>
                 </td>
             </tr>
             </tbody>
@@ -29,6 +51,8 @@
             return {
                 address: null,
                 balance: null,
+                network: Network,
+                version: null
             }
         },
         mounted () {
@@ -37,6 +61,10 @@
                 .then(() => {
                     Network.getBalance(this.address)
                         .then((response) => { this.balance = response.data })
+                })
+                .then(() => {
+                    Network.version()
+                        .then((response) => { this.version = response.data })
                 })
         },
         computed: {
