@@ -1,5 +1,5 @@
 <template>
-    <div class="statistics">
+    <div class="operations">
         <h1 class="title is-1">Operations</h1>
 
         <table class="table is-fullwidth is-striped">
