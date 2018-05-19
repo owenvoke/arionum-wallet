@@ -2,7 +2,7 @@
     <div class="statistics">
         <h1 class="title is-1">Operations</h1>
 
-        <table class="table is-fullwidth">
+        <table class="table is-fullwidth is-striped">
             <thead>
             <tr>
                 <th>Date</th>
@@ -14,7 +14,7 @@
             </thead>
             <tbody>
             <tr v-for="transaction in transactions" :key="transaction.id" class="transaction">
-                <td class="t-date">{{ helpers.getFormattedTransactionDate(transaction.date) }}</td>
+                <td class="t-date">{{ helpers.getFormattedDate(transaction.date) }}</td>
                 <td class="t-source">
                     <a target="_blank" :href="helpers.getAddressLink(transaction.src)">{{ transaction.src }}</a>
                 </td>
