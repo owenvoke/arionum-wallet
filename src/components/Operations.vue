@@ -40,7 +40,6 @@
         data () {
             return {
                 address: null,
-                network: Network,
                 helpers: Helpers,
                 transactions: []
             }
