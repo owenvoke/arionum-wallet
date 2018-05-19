@@ -1,7 +1,7 @@
+import Account from './components/Account'
 import Settings from './components/Settings'
-import Statistics from './components/Statistics'
 
 export default [
-  {path: '/', component: Statistics},
+  {path: '/', component: Account},
   {path: '/settings', component: Settings}
 ]

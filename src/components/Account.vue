@@ -1,6 +1,6 @@
 <template>
     <div class="statistics">
-        <h1 class="title is-1">Statistics</h1>
+        <h1 class="title is-1">Account</h1>
 
         <table class="table">
             <tbody>
@@ -24,7 +24,7 @@
     import Network from '../modules/Network'
 
     export default {
-        name: 'Statistics',
+        name: 'Account',
         data () {
             return {
                 address: null,
