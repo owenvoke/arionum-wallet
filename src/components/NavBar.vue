@@ -14,8 +14,18 @@
         </div>
 
         <div class="navbar-end">
-            <router-link class="navbar-item" to="/operations">Operations</router-link>
-            <router-link class="navbar-item" to="/settings">Settings</router-link>
+            <router-link class="navbar-item" to="/operations">
+                <span class="icon">
+                       <i class="fas fa-credit-card"></i>
+                </span>
+                <span>Operations</span>
+            </router-link>
+            <router-link class="navbar-item" to="/settings">
+                <span class="icon">
+                       <i class="fas fa-sliders-h"></i>
+                </span>
+                <span>Settings</span>
+            </router-link>
         </div>
     </nav>
 </template>
