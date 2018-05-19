@@ -1,4 +1,7 @@
+import 'datejs'
+
 export default {
+  // API endpoints
   endpoints: {
     address: '/api.php?q=getAddress',
     base58: '/api.php?q=base58',
@@ -15,6 +18,7 @@ export default {
     mempoolSize: '/api.php?q=mempoolSize'
   },
 
+  // General methods
   getPeer () {
     return process.env.VUE_APP_NODE_URL
   },
@@ -23,6 +27,8 @@ export default {
       .then(response => { return response.json() })
       .catch(error => console.error('Request failed', error))
   },
+
+  // API methods
   getAddress (publicKey) {
     return this.getRequest(this.endpoints.address + `&public_key=${publicKey}`)
   },
@@ -61,5 +67,15 @@ export default {
   },
   mempoolSize () {
     return this.getRequest(this.endpoints.mempoolSize)
+  },
+
+  // Helper methods
+  getFormattedTransactionDate (date) {
+    let d = new Date(0)
+    d.setUTCSeconds(date)
+    return d.toString('dS MMM yyyy HH:mm:s')
+  },
+  getAddressLink (address) {
+    return `//arionum.info/account/${address}`
   }
 }
