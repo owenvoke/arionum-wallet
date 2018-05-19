@@ -11,13 +11,11 @@
 
 <script>
   import NavBar from './components/NavBar'
-  import Settings from './components/Settings'
 
   export default {
     name: 'app',
     components: {
-      NavBar,
-      Settings
+      NavBar
     }
   }
 </script>
