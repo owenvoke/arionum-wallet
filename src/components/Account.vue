@@ -2,7 +2,7 @@
     <div class="statistics">
         <h1 class="title is-1">Account</h1>
 
-        <table class="table">
+        <table class="table is-fullwidth">
             <tbody>
             <tr>
                 <td>
@@ -49,10 +49,10 @@
         name: 'Account',
         data () {
             return {
-                address: null,
-                balance: null,
+                address: 'Unknown',
+                balance: 'Unknown',
                 network: Network,
-                version: null
+                version: 'Unknown'
             }
         },
         mounted () {

@@ -2,7 +2,7 @@
     <div class="statistics">
         <h1 class="title is-1">Operations</h1>
 
-        <table class="table">
+        <table class="table is-fullwidth">
             <thead>
             <tr>
                 <th>Date</th>
