@@ -31,15 +31,19 @@
         </p>
       </div>
     </div>
+
+    <generate-address></generate-address>
   </div>
 </template>
 
 <script>
   import { publicKey, privateKey } from '../modules/Keys'
   import Network from '../modules/Network'
+  import GenerateAddress from './GenerateAddress'
 
   export default {
     name: 'Settings',
+    components: {GenerateAddress},
     data () {
       return {
         address: null
