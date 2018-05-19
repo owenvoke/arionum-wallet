@@ -1,5 +1,5 @@
 <template>
-  <div class="account">
+  <div id="account">
     <h1 class="title is-1">Account</h1>
 
     <table class="table is-fullwidth">

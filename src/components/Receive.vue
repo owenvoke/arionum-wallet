@@ -1,5 +1,5 @@
 <template>
-  <div class="receive">
+  <div id="receive">
     <h1 class="title is-1">Receive</h1>
 
     <form>
