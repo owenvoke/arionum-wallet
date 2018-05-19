@@ -24,11 +24,12 @@
       <div class="field">
         <label class="label" for="details.privateKey">Private key</label>
         <p class="control has-icons-left">
-          <input class="input" id="details.privateKey" v-model="privateKey"/>
+          <input class="input is-danger" id="details.privateKey" v-model="privateKey"/>
           <span class="icon is-small is-left">
             <i class="fas fa-lock"></i>
           </span>
         </p>
+        <p class="help">Please make sure you have a backup of the private key.</p>
       </div>
     </div>
 
