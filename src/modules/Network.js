@@ -1,3 +1,5 @@
+const STATUS_OK = 'ok'
+
 export default {
   // API endpoints
   endpoints: {
@@ -14,16 +16,6 @@ export default {
     blockTransactions: '/api.php?q=getBlockTransactions',
     version: '/api.php?q=version',
     mempoolSize: '/api.php?q=mempoolSize'
-  },
-
-  // General methods
-  getPeer () {
-    return process.env.VUE_APP_NODE_URL
-  },
-  getRequest (endpoint) {
-    return fetch(this.getPeer() + endpoint)
-      .then(response => { return response.json() })
-      .catch(error => console.error('Request failed', error))
   },
 
   // API methods
@@ -65,5 +57,25 @@ export default {
   },
   mempoolSize () {
     return this.getRequest(this.endpoints.mempoolSize)
+  },
+
+  // General methods
+  getPeer () {
+    return process.env.VUE_APP_NODE_URL
+  },
+  getRequest (endpoint) {
+    return fetch(this.getPeer() + endpoint)
+      .then(this.json)
+      .catch(error => console.error('Request failed', error))
+  },
+  json (response) {
+    return response.json()
+      .then(data => {
+        if (data.status === STATUS_OK) {
+          return Promise.resolve(data)
+        } else {
+          return Promise.reject(new Error(response.data))
+        }
+      })
   }
 }
