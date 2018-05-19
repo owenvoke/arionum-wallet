@@ -15,12 +15,17 @@ Via CLI
 ```bash
 $ git clone git@github.com:pxgamer/arionum-web-wallet.git
 $ cd arionum-web-wallet
-$ yarn install
+$ yarn
 ```
 
 ## Usage
 
-...
+This wallet requires a Node with the `Access-Control-Allow-Origin` header set to function correctly.
+This can be set in the `.env` file.
+
+In theory, all you need to provide is your public key. To do this, add it in the `/settings` view.
+
+For development, you can use `yarn serve`. For production, you can use `yarn build`.
 
 ## Change log
 
