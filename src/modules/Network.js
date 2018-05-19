@@ -1,5 +1,3 @@
-import 'datejs'
-
 export default {
   // API endpoints
   endpoints: {
@@ -67,18 +65,5 @@ export default {
   },
   mempoolSize () {
     return this.getRequest(this.endpoints.mempoolSize)
-  },
-
-  // Helper methods
-  getFormattedTransactionDate (date) {
-    let d = new Date(0)
-    d.setUTCSeconds(date)
-    return d.toString('dS MMM yyyy HH:mm:s')
-  },
-  getAddressLink (address) {
-    return `//arionum.info/account/${address}`
-  },
-  getBlockLink (block) {
-    return `//arionum.info/block/${block}`
   }
 }
