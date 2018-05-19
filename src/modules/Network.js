@@ -77,5 +77,8 @@ export default {
   },
   getAddressLink (address) {
     return `//arionum.info/account/${address}`
+  },
+  getBlockLink (block) {
+    return `//arionum.info/block/${block}`
   }
 }
