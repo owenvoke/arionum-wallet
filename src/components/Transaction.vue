@@ -127,8 +127,4 @@
   }
 </script>
 
-<style lang="scss" scoped>
-  .transaction {
-    font-size: 0.8em;
-  }
-</style>
+<style lang="scss" scoped></style>
