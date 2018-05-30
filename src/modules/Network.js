@@ -66,7 +66,7 @@ export default {
   getRequest (endpoint) {
     return window.fetch(this.getPeer() + endpoint)
       .then(this.json)
-      .catch(error => console.error('Request failed', error))
+      .catch(error => window.console.error(error))
   },
   json (response) {
     return response.json()
