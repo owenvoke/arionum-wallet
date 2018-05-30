@@ -10,6 +10,7 @@
         <th>Block Height</th>
         <th>Message</th>
         <th>Amount</th>
+        <th></th>
       </tr>
       </thead>
       <tbody>
@@ -19,12 +20,17 @@
           <a target="_blank" :href="helpers.getAddressLink(transaction.src)">{{ transaction.src }}</a>
         </td>
         <td class="t-block">
-          <a target="_blank" :href="helpers.getBlockLink(transaction.block)">
-            {{ transaction.height }}
-          </a>
+          <router-link :to="{ name: 'block', params: { blockHeight: transaction.height }}">
+            <span>{{ transaction.height }}</span>
+          </router-link>
         </td>
         <td class="t-message">{{ transaction.message }}</td>
         <td class="t-value">{{ transaction.val }}</td>
+        <td class="t-info">
+          <router-link :to="{ name: 'transaction', params: { transactionId: transaction.id }}">
+            <i class="fas fa-info"></i>
+          </router-link>
+        </td>
       </tr>
       </tbody>
     </table>
@@ -32,7 +38,7 @@
 </template>
 
 <script>
-  import { publicKey, privateKey } from '../modules/Keys'
+  import { privateKey, publicKey } from '../modules/Keys'
   import Network from '../modules/Network'
   import Helpers from '../modules/Helpers'
 
@@ -60,8 +66,4 @@
   }
 </script>
 
-<style lang="scss" scoped>
-  .transaction {
-    font-size: 0.8em;
-  }
-</style>
+<style lang="scss" scoped></style>
