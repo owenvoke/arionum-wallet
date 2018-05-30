@@ -15,12 +15,17 @@ Via CLI
 ```bash
 $ git clone git@github.com:pxgamer/arionum-web-wallet.git
 $ cd arionum-web-wallet
-$ yarn install
+$ yarn
 ```
 
 ## Usage
 
-...
+This wallet requires a Node with the `Access-Control-Allow-Origin` header set to function correctly.
+This can be set in the `.env` file.
+
+In theory, all you need to provide is your public key. To do this, add it in the `/settings` view.
+
+For development, you can use `yarn serve`. For production, you can use `yarn build`.
 
 ## Change log
 
@@ -41,8 +46,8 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [ico-code-quality]: https://img.shields.io/codecov/c/github/pxgamer/arionum-web-wallet.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/npm/dt/arionum-web-wallet.svg?style=flat-square
 
-[link-packagist]: https://npmjs.com/package/arionum-web-wallet
-[link-travis]: https://travis-ci.org/pxgamer/arionum-web-wallet
+[link-npm]: https://npmjs.com/package/arionum-web-wallet
+[link-travis]: https://travis-ci.com/pxgamer/arionum-web-wallet
 [link-code-quality]: https://codecov.io/gh/pxgamer/arionum-web-wallet
 [link-downloads]: https://npmjs.com/package/arionum-web-wallet
 [link-author]: https://github.com/pxgamer
