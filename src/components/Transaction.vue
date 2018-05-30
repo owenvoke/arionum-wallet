@@ -98,7 +98,7 @@
 </template>
 
 <script>
-  import { publicKey, privateKey } from '../modules/Keys'
+  import { privateKey, publicKey } from '../modules/Keys'
   import Network from '../modules/Network'
   import Helpers from '../modules/Helpers'
 
@@ -114,10 +114,10 @@
     },
     mounted () {
       Network.getAddress(this.publicKey)
-        .then((response) => { this.address = response.data })
+        .then(response => this.address = response.data)
         .then(() => {
           Network.getTransaction(this.$route.params.transactionId)
-            .then((response) => { this.transactionData = response.data })
+            .then(response => this.transactionData = response.data)
         })
     },
     computed: {

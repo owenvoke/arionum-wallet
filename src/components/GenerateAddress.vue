@@ -45,7 +45,7 @@
       },
       generateAccount () {
         Network.generateAccount()
-          .then((response) => {
+          .then(response => {
             this.address = response.data.address
             this.publicKey = response.data.public_key
             this.privateKey = response.data.private_key

@@ -53,10 +53,10 @@
     },
     mounted () {
       Network.getAddress(this.publicKey)
-        .then((response) => { this.address = response.data })
+        .then(response => this.address = response.data)
         .then(() => {
           Network.getTransactions(this.address)
-            .then((response) => { this.transactions = response.data })
+            .then(response => this.transactions = response.data)
         })
     },
     computed: {

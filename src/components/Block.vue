@@ -125,10 +125,10 @@
     },
     mounted () {
       Network.getAddress(this.publicKey)
-        .then((response) => { this.address = response.data })
+        .then(response => this.address = response.data)
         .then(() => {
           Network.getBlock(this.$route.params.blockHeight)
-            .then((response) => { this.blockData = response.data })
+            .then(response => this.blockData = response.data)
         })
     },
     computed: {
