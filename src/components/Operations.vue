@@ -5,16 +5,21 @@
     <table class="table is-fullwidth is-striped">
       <thead>
       <tr>
+        <th></th>
         <th>Date</th>
         <th>From Address</th>
         <th>Block Height</th>
         <th>Message</th>
         <th>Amount</th>
-        <th></th>
       </tr>
       </thead>
       <tbody>
       <tr v-for="transaction in transactions" :key="transaction.id" class="transaction">
+        <td class="t-info">
+          <router-link :to="{ name: 'transaction', params: { transactionId: transaction.id }}">
+            <i class="fas fa-info"></i>
+          </router-link>
+        </td>
         <td class="t-date">{{ helpers.getFormattedDate(transaction.date) }}</td>
         <td class="t-source">
           <a target="_blank" :href="helpers.getAddressLink(transaction.src)">{{ transaction.src }}</a>
@@ -26,11 +31,6 @@
         </td>
         <td class="t-message">{{ transaction.message }}</td>
         <td class="t-value">{{ transaction.val }}</td>
-        <td class="t-info">
-          <router-link :to="{ name: 'transaction', params: { transactionId: transaction.id }}">
-            <i class="fas fa-info"></i>
-          </router-link>
-        </td>
       </tr>
       </tbody>
     </table>
