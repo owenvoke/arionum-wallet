@@ -13,8 +13,8 @@ A Node wallet for the Arionum cryptocurrency.
 Via CLI
 
 ```bash
-$ git clone git@github.com:pxgamer/arionum-web-wallet.git
-$ cd arionum-web-wallet
+$ git clone git@github.com:pxgamer/arionum-wallet.git
+$ cd arionum-wallet
 $ yarn
 ```
 
