@@ -32,6 +32,14 @@ yarn build
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
 
+## Contributing
+
+Please see [CONTRIBUTING](.github/CONTRIBUTING.md) and [CODE_OF_CONDUCT](.github/CODE_OF_CONDUCT.md) for details.
+
+## Security
+
+If you discover any security related issues, please email owzie123@gmail.com instead of using the issue tracker.
+
 ## Credits
 
 - [pxgamer][link-author]
