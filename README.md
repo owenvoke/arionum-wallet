@@ -1,4 +1,4 @@
-# arionum-web-wallet
+# arionum-wallet
 
 [![Latest Version on NPM][ico-version]][link-npm]
 [![Software License][ico-license]](LICENSE.md)
@@ -6,7 +6,7 @@
 [![Code Coverage][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-A Node web wallet for the Arionum cryptocurrency.
+A Node wallet for the Arionum cryptocurrency.
 
 ## Install
 
