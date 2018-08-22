@@ -49,15 +49,15 @@ If you discover any security related issues, please email owzie123@gmail.com ins
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-version]: https://img.shields.io/npm/v/arionum-web-wallet.svg?style=flat-square
+[ico-version]: https://img.shields.io/npm/v/arionum-wallet.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/pxgamer/arionum-web-wallet/master.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/codecov/c/github/pxgamer/arionum-web-wallet.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/npm/dt/arionum-web-wallet.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/pxgamer/arionum-wallet/master.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/codecov/c/github/pxgamer/arionum-wallet.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/npm/dt/arionum-wallet.svg?style=flat-square
 
-[link-npm]: https://npmjs.com/package/arionum-web-wallet
-[link-travis]: https://travis-ci.com/pxgamer/arionum-web-wallet
-[link-code-quality]: https://codecov.io/gh/pxgamer/arionum-web-wallet
-[link-downloads]: https://npmjs.com/package/arionum-web-wallet
+[link-npm]: https://npmjs.com/package/arionum-wallet
+[link-travis]: https://travis-ci.com/pxgamer/arionum-wallet
+[link-code-quality]: https://codecov.io/gh/pxgamer/arionum-wallet
+[link-downloads]: https://npmjs.com/package/arionum-wallet
 [link-author]: https://github.com/pxgamer
 [link-contributors]: ../../contributors
