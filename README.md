@@ -20,12 +20,13 @@ $ yarn
 
 ## Usage
 
-This wallet requires a Node with the `Access-Control-Allow-Origin` header set to function correctly.
-This can be set in the `.env` file.
+```bash
+# Serve with hot reload at localhost:9080
+yarn dev
 
-In theory, all you need to provide is your public key. To do this, add it in the `/settings` view.
-
-For development, you can use `yarn serve`. For production, you can use `yarn build`.
+# Build electron application for production
+yarn build
+```
 
 ## Change log
 

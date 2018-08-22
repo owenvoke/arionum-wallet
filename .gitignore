@@ -1,4 +1,6 @@
-/dist
+dist/electron/*
+dist/web/*
+build/*
+!build/icons
 /node_modules
-yarn-error.log
 .env
