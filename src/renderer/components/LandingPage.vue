@@ -5,18 +5,18 @@
         <img class="logo" src="~@/assets/logo.svg" alt="Arionum">
         <div class="options-box">
           <h4 class="title is-4">Get started with Arionum</h4>
-          <a class="box has-text-left">
+          <router-link to="/create-wallet" class="box has-text-left">
             <b-icon icon="plus" custom-class="fa-fw"></b-icon>
             <strong>Create a new wallet</strong>
-          </a>
-          <a class="box has-text-left">
+          </router-link>
+          <router-link to="/existing-wallet-file" class="box has-text-left">
             <b-icon icon="file" custom-class="fa-fw"></b-icon>
             <strong>Use an existing wallet file</strong>
-          </a>
-          <a class="box has-text-left">
+          </router-link>
+          <router-link to="/existing-wallet" class="box has-text-left">
             <b-icon icon="keyboard" custom-class="fa-fw"></b-icon>
             <strong>Use an existing wallet key pair</strong>
-          </a>
+          </router-link>
           <a class="box has-text-left" @click="open('https://www.arionum.com')">
             <b-icon icon="external-link-alt" custom-class="fa-fw"></b-icon>
             <strong>Learn about Arionum</strong>
