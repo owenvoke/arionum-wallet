@@ -1,17 +1,29 @@
 <template>
   <transition type="fade">
-    <section class="section has-text-centered">
-      <img class="logo" src="~@/assets/logo.svg" alt="Arionum">
-      <div class="wallet-section">
-        <h3 class="title is-3">Need a wallet?</h3>
-        <button class="button is-success">Create a new wallet</button>
-      </div>
-      <div class="wallet-section">
-        <h3 class="title is-3">Already have a wallet?</h3>
-        <button class="button">Select wallet file</button>
-        <button class="button">Enter keys manually</button>
-      </div>
-    </section>
+    <div class="container">
+      <section class="section has-text-centered">
+        <img class="logo" src="~@/assets/logo.svg" alt="Arionum">
+        <div class="options-box">
+          <h4 class="title is-4">Get started with Arionum</h4>
+          <a class="box has-text-left">
+            <b-icon icon="plus" custom-class="fa-fw"></b-icon>
+            <strong>Create a new wallet</strong>
+          </a>
+          <a class="box has-text-left">
+            <b-icon icon="file" custom-class="fa-fw"></b-icon>
+            <strong>Use an existing wallet file</strong>
+          </a>
+          <a class="box has-text-left">
+            <b-icon icon="keyboard" custom-class="fa-fw"></b-icon>
+            <strong>Use an existing wallet key pair</strong>
+          </a>
+          <a class="box has-text-left" @click="open('https://www.arionum.com')">
+            <b-icon icon="external-link-alt" custom-class="fa-fw"></b-icon>
+            <strong>Learn about Arionum</strong>
+          </a>
+        </div>
+      </section>
+    </div>
   </transition>
 </template>
 
@@ -33,10 +45,8 @@
     width: 420px;
   }
 
-  .wallet-section {
-    margin-bottom: 1rem;
-    .button {
-      margin-bottom: 0.1rem;
-    }
+  .options-box {
+    max-width: 40rem;
+    margin: auto;
   }
 </style>
