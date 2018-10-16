@@ -3,7 +3,7 @@ import axios from 'axios'
 import Buefy from 'buefy'
 import '@fortawesome/fontawesome-free/css/all.css'
 import 'bulma/css/bulma.css'
-import 'buefy/lib/buefy.css'
+import 'buefy/dist/buefy.css'
 
 import App from './App'
 import router from './router'
