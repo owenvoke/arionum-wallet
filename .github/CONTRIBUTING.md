@@ -6,7 +6,7 @@ We accept contributions via Pull Requests on [Github](https://github.com/pxgamer
 
 ## Pull Requests
 
-- **[Standard JS Coding Standard](https://standardjs.com)** - Check the code style with ``$ npm check-style`` and fix it with ``$ npm fix-style``.
+- **[Standard JS Coding Standard](https://standardjs.com)** - Check and fix the code style with ``$ yarn lint``.
 
 - **Add tests!** - If possible, try to add tests to support your patch.
 
