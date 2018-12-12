@@ -1,4 +1,4 @@
-# arionum-web-wallet
+# arionum-wallet
 
 [![Latest Version on NPM][ico-version]][link-npm]
 [![Software License][ico-license]](LICENSE.md)

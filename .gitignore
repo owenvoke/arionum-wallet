@@ -1,6 +1,2 @@
-dist/electron/*
-dist/web/*
-build/*
-!build/icons
+/.env
 /node_modules
-.env
