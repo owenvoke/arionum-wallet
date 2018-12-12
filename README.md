@@ -16,6 +16,8 @@ Via CLI
 $ git clone git@github.com:pxgamer/arionum-wallet.git
 $ cd arionum-wallet
 $ yarn
+$ yarn serve # Hot reload development server
+$ yarn build # Create a compiled production release
 ```
 
 ## Usage
