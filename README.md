@@ -1,4 +1,4 @@
-# arionum-wallet
+# arionum-web-wallet
 
 [![Latest Version on NPM][ico-version]][link-npm]
 [![Software License][ico-license]](LICENSE.md)
@@ -6,7 +6,7 @@
 [![Code Coverage][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-A Node wallet for the Arionum cryptocurrency.
+A web wallet for the Arionum cryptocurrency.
 
 ## Install
 
@@ -20,13 +20,7 @@ $ yarn
 
 ## Usage
 
-```bash
-# Serve with hot reload at localhost:9080
-yarn dev
-
-# Build electron application for production
-yarn build
-```
+...
 
 ## Change log
 
@@ -38,7 +32,7 @@ Please see [CONTRIBUTING](.github/CONTRIBUTING.md) and [CODE_OF_CONDUCT](.github
 
 ## Security
 
-If you discover any security related issues, please email owzie123@gmail.com instead of using the issue tracker.
+If you discover any security related issues, please email security@pxgamer.xyz instead of using the issue tracker.
 
 ## Credits
 
