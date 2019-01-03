@@ -1,10 +1,10 @@
 <template>
   <b-navbar toggleable="md" type="dark" variant="dark">
 
-    <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
+    <b-navbar-toggle target="navCollapse"></b-navbar-toggle>
     <b-navbar-brand to="/"><span class="text-info">Arionum</span> Wallet</b-navbar-brand>
 
-    <b-collapse is-nav id="nav_collapse">
+    <b-collapse is-nav id="navCcollapse">
 
       <b-navbar-nav class="ml-auto">
         <b-nav-item right>
