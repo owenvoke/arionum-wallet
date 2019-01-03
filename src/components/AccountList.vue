@@ -16,8 +16,8 @@
       <div>
         <div class="btn-group">
           <button tabindex="0" type="button" class="btn btn-light">
-		    <i class="fas fa-ellipsis-h"></i>
-		  </button>
+        <i class="fas fa-ellipsis-h"></i>
+      </button>
         </div>
         <div class="btn-group">
           <button tabindex="0" type="button" class="btn btn-secondary">
