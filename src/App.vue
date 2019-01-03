@@ -17,6 +17,7 @@
 </style>
 
 <script>
+import '@fortawesome/fontawesome-free/js/all'
 import NavBar from '@/components/NavBar.vue'
 
 export default {
