@@ -1,7 +1,7 @@
 <template>
   <div class="account-list">
     <h4 class="heading is-size-4 text-uppercase">Accounts</h4>
-    <div class="border rounded-1 p-3">
+    <div class="border rounded p-3">
       <div>
         <div
           style="width: 30px; height: 30px; background: url('https://www.gravatar.com/avatar/369bfea86e43374e98de1b399994ec67?s=30&d=identicon&r=PG'); border-radius: 50%; position: relative; background-size: cover;"
@@ -11,19 +11,15 @@
         </div>
       </div>
       <div class="mb-1">
-        <span class="text-monospace">0.00044441 ARO</span>
+        <span class="text-monospace balance">0.00044441 ARO</span>
       </div>
-      <div>
-        <div class="btn-group">
-          <button tabindex="0" type="button" class="btn btn-light">
-        <i class="fas fa-ellipsis-h"></i>
-      </button>
-        </div>
-        <div class="btn-group">
-          <button tabindex="0" type="button" class="btn btn-secondary">
-            <span>Send</span>
-          </button>
-        </div>
+      <div class="actions">
+        <button type="button" class="btn btn-light mr-1">
+          <i class="fas fa-ellipsis-h"></i>
+        </button>
+        <button type="button" class="btn btn-secondary">
+          <span>Send</span>
+        </button>
       </div>
     </div>
   </div>
