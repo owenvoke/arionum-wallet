@@ -15,18 +15,7 @@
               <i class="fas fa-search"></i>
           </b-button>
 	    </b-input-group>
-        <b-table striped show-empty>
-          <thead>
-          <tr style="border-bottom: 1px solid rgb(234, 239, 236); color: rgb(26, 26, 26); height: 48px;">
-            <th>Amount</th>
-            <th>Status</th>
-            <th>From</th>
-            <th>&nbsp;</th>
-            <th>To</th>
-            <th></th>
-          </tr>
-          </thead>
-        </b-table>
+        <b-table striped show-empty></b-table>
       </div>
     </div>
   </div>
