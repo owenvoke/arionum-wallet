@@ -4,7 +4,7 @@
     <div class="mt-4">
       <h4 class="heading is-size-4 text-uppercase">History</h4>
       <div class="border rounded">
-	    <b-input-group class="m-1">
+	    <b-input-group class="p-1">
           <b-dropdown text="All" variant="outline-secondary" slot="prepend">
             <b-dropdown-item>All</b-dropdown-item>
             <b-dropdown-item>In</b-dropdown-item>
