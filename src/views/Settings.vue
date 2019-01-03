@@ -2,7 +2,7 @@
   <div class="settings mt-4">
     <h2>Settings</h2>
 
-  <b-form-group>
+  <b-form-group label="Node URI:">
     <b-form-input v-model="settings.nodeUri"></b-form-input>
   </b-form-group>
 
@@ -21,13 +21,13 @@ export default {
     }
   },
   mounted () {
-    if (localStorage.getItem('~/settings')) {
-      this.settings = JSON.parse(localStorage.getItem('~/settings'))
+    if (this.ls.get('settings')) {
+      this.settings = JSON.parse(this.ls.get('settings'))
     }
   },
   methods: {
     saveSettings: function () {
-      localStorage.setItem('~/settings', JSON.stringify(this.settings))
+      this.ls.set('settings', JSON.stringify(this.settings))
     }
   }
 }
