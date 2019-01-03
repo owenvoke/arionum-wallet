@@ -8,13 +8,18 @@
             <i class="fas fa-search"></i>
           </b-button>
 	    </b-input-group>
-      <b-table striped show-empty></b-table>
+      <b-table striped show-empty :fields="fields"></b-table>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'history'
+  name: 'history',
+  data () {
+    return {
+	  fields: ['Value', 'Status', 'From', 'To']
+	}
+  }
 }
 </script>
