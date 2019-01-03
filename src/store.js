@@ -1,16 +1,10 @@
 import Vue from 'vue'
-import Vuex from 'vuex'
+import Storage from 'vue-ls'
 
-Vue.use(Vuex)
+let options = {
+  namespace: 'aro:',
+  name: 'ls',
+  storage: 'local'
+}
 
-export default new Vuex.Store({
-  state: {
-
-  },
-  mutations: {
-
-  },
-  actions: {
-
-  }
-})
+Vue.use(Storage, options)
