@@ -4,6 +4,7 @@ import router from './router'
 import store from './store'
 import BootstrapVue from 'bootstrap-vue'
 import '@fortawesome/fontawesome-free/js/all'
+import 'jdenticon/dist/jdenticon'
 import './registerServiceWorker'
 import './styles'
 

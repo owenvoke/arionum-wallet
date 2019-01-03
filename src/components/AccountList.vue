@@ -3,7 +3,7 @@
     <h4 class="heading is-size-4 text-uppercase">Accounts</h4>
     <div class="border rounded p-3">
       <div class="details d-block align-middle text-monospace text-truncate">
-        <b-img rounded="circle" class="d-inline-block m-1" src="https://www.gravatar.com/avatar/369bfea86e43374e98de1b399994ec67?s=30&d=identicon"></b-img>
+	    <svg class="d-inline-block m-1 rounded-circle" width="38" height="38" data-jdenticon-value="51sJ4LbdKzhyGy4zJGqodNLse9n9JsVT2rdeH92w7cf3qQuSDJupvjbUT1UBr7r1SCUAXG97saxn7jt2edKb4v4J"></svg>
         <span>51sJ4LbdKzhyGy4zJGqodNLse9n9JsVT2rdeH92w7cf3qQuSDJupvjbUT1UBr7r1SCUAXG97saxn7jt2edKb4v4J</span>
       </div>
       <div class="mb-1">
