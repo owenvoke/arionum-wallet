@@ -8,7 +8,7 @@
 
       <b-navbar-nav class="ml-auto">
         <b-nav-item right>
-          <b-button size="sm" variant="secondary">Settings</b-button>
+          <b-button size="sm" variant="secondary" to="/settings">Settings</b-button>
         </b-nav-item>
       </b-navbar-nav>
 
