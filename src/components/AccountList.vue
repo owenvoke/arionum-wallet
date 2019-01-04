@@ -10,7 +10,7 @@
         <span class="text-monospace balance">0.00044441 ARO</span>
       </div>
       <div class="actions btn-group">
-        <b-dropdown variant="outline-dark" no-caret>
+        <b-dropdown size="sm" variant="outline-dark" no-caret>
           <template slot="button-content">
             <i class="fas fa-ellipsis-h fa-fw"></i>
           </template>
@@ -24,7 +24,7 @@
             <span>Print</span>
           </b-dropdown-item-button>
         </b-dropdown>
-        <b-button variant="secondary">
+        <b-button variant="secondary" size="sm">
           <span>Send</span>
         </b-button>
       </div>
