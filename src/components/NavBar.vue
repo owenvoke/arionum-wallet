@@ -8,7 +8,13 @@
 
       <b-navbar-nav class="ml-auto">
         <b-nav-item right>
-          <b-button size="sm" variant="secondary" to="/settings">Settings</b-button>
+          <b-button size="sm" variant="info" to="/accounts" class="mr-1">
+            <i class="fas fa-wallet fa-fw mr-1"></i>
+            <span>Accounts</span>
+          </b-button>
+          <b-button size="sm" variant="secondary" to="/settings">
+            <i class="fas fa-cog fa-fw"></i>
+          </b-button>
         </b-nav-item>
       </b-navbar-nav>
 

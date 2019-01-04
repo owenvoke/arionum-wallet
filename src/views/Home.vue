@@ -9,7 +9,7 @@
 export default {
   name: 'home',
   components: {
-    AccountList: require('@/components/AccountList.vue').default,
+    AccountList: require('@/components/Accounts/List.vue').default,
     History: require('@/components/History.vue').default
   }
 }
