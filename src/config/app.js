@@ -14,7 +14,7 @@ let localSettings = Vue.ls.get('settings') ? JSON.parse(Vue.ls.get('settings')) 
 let settings = { ...defaultSettings, ...localSettings }
 
 // Import accounts from local storage
-let accounts = Vue.ls.get('acccounts') ? JSON.parse(Vue.ls.get('acccounts')) : {}
+let accounts = Vue.ls.get('acccounts') ? JSON.parse(Vue.ls.get('acccounts')) : []
 
 // Save accounts to local storage
 function saveAccounts () {
