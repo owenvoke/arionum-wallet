@@ -9,10 +9,21 @@
       <div class="mb-1">
         <span class="text-monospace balance">0.00044441 ARO</span>
       </div>
-      <div class="actions">
-        <b-button variant="light" class="mr-1">
-          <i class="fas fa-ellipsis-h"></i>
-        </b-button>
+      <div class="actions btn-group">
+        <b-dropdown variant="outline-dark" no-caret>
+          <template slot="button-content">
+            <i class="fas fa-ellipsis-h fa-fw"></i>
+          </template>
+
+          <b-dropdown-item-button>
+            <i class="fas fa-save fa-fw mr-1"></i>
+            <span>Export</span>
+          </b-dropdown-item-button>
+          <b-dropdown-item-button>
+            <i class="fas fa-print fa-fw mr-1"></i>
+            <span>Print</span>
+          </b-dropdown-item-button>
+        </b-dropdown>
         <b-button variant="secondary">
           <span>Send</span>
         </b-button>
