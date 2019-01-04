@@ -21,13 +21,13 @@ export default {
     }
   },
   mounted () {
-    if (this.ls.get('settings')) {
-      this.settings = JSON.parse(this.ls.get('settings'))
+    if (this.$ls.get('settings')) {
+      this.settings = JSON.parse(this.$ls.get('settings'))
     }
   },
   methods: {
     saveSettings: function () {
-      this.ls.set('settings', JSON.stringify(this.settings))
+      this.$ls.set('settings', JSON.stringify(this.settings))
     }
   }
 }
