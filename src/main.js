@@ -1,11 +1,11 @@
 import Vue from 'vue'
-import router from './router'
+import router from './config/router'
 import BootstrapVue from 'bootstrap-vue'
 import '@fortawesome/fontawesome-free/js/all'
 import 'jdenticon/dist/jdenticon'
-import './registerServiceWorker'
-import './store'
-import './styles'
+import './config/registerServiceWorker'
+import './config/store'
+import './config/styles'
 import App from './App.vue'
 
 Vue.config.productionTip = false
