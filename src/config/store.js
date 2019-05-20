@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Storage from 'vue-ls'
 
 let options = {
-  namespace: 'aro:',
+  namespace: 'arionum/',
   name: 'ls',
   storage: 'local'
 }
